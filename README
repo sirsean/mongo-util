@@ -1,0 +1,5 @@
+The *mongo-util* project is a Java library that adds a simple layer of abstraction between your business logic and the Mongo storage details.
+
+Configure a connection to your Mongo database (or cluster), and define all the collections you want to use. (MongoDatabaseConnector and MongoCollection are your friends here, intended to be configured using Spring.)
+
+Implement MongoDao/AbstractMongoDao to build your data-access classes, and extend the ModelFactory for each type you're storing (each MongoCollection should have its own type that extends MongoModel).
