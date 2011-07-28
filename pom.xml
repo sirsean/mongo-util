@@ -33,10 +33,5 @@
             <version>4.5</version>
 		</dependency>
 	</dependencies>
-    <!--
-	<scm>
-		<developerConnection>scm:svn:https://svn.trustwave.com/engineering/SSL/mongo-util/trunk/</developerConnection>
-	</scm>
-    -->
 </project>
 
