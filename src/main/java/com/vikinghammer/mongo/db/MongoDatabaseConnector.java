@@ -57,7 +57,8 @@ public class MongoDatabaseConnector {
         options.maxWaitTime = _maxWaitTime;
         options.socketTimeout = _socketTimeout;
         options.threadsAllowedToBlockForConnectionMultiplier = _threadsAllowedToBlockForConnectionMultiplier;
-        options.maxConnectionRetryTime = _maxConnectionRetryTime;
+        // TODO: activate this once the maxConnectionRetryTime is accepted into mongo-java-driver
+        //options.maxConnectionRetryTime = _maxConnectionRetryTime;
 
         // split the hostname on comma, because they can specify a replica set
         String[] hostnames = _host.split(",");
